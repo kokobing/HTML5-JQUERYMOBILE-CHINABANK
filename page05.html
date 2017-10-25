@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自贸区银行家</title>
+<meta name="title" content="OA">
+<meta name="keywords" content="自贸区银行家">
+<meta name="description" content="自贸区银行家">
+<link rel="stylesheet" href="inc/css/jquery.mobile.theme-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.icons-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/font-awesome.min.css">
+<link rel="stylesheet" href="inc/css/resetui.css">
+<script src="inc/js/jquery.js"></script>
+<script src="inc/js/jquery.easing.min.js"></script>
+<script src="inc/js/custom.js"></script>
+<script src="inc/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="e-wap e-index"  id="page05">
+  <div role="main" class="ui-content e-content">
+    <div class="page_bg">
+      <div class="page05_title">中国银行大事记</div>
+      <div class="page05_c_box">
+        <div class="page05_content">
+          <div class="c_list">
+            <div class="c_list_p expand-all">●</div>
+            <div class="c_list_l">2013.9.29</div>
+            <div class="c_list_r" style="position:relative">自贸区分行获批挂牌成立
+               <div class="page5btn"> <a href="#popup5imgs" data-rel="popup" data-position-to="window" data-transition="fade"><img class="change2btn expand-all" src="inc/pics/btn1.png"></a> </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <div class="c_list">
+            <div class="c_list_p expand-all">●</div>
+            <div class="c_list_l">2013.12.5</div>
+            <div class="c_list_r">成功叙做自贸区首单跨境人民币双向资金池业务</div>
+            <div class="clr"></div>
+          </div>
+          <div class="c_list">
+            <div class="c_list_p expand-all">●</div>
+            <div class="c_list_l">2014.2.18</div>
+            <div class="c_list_r">率先启动自贸区第三方支付机构跨境人民币支付业务试点</div>
+            <div class="clr"></div>
+          </div>
+          <div class="c_list">
+            <div class="c_list_p expand-all">●</div>
+            <div class="c_list_l">2014.2.21</div>
+            <div class="c_list_r">成功叙做首笔用以支持自贸区主体建设的跨境人民币贷款业务</div>
+            <div class="clr"></div>
+          </div>
+          <div class="c_list">
+            <div class="c_list_p expand-all">●</div>
+            <div class="c_list_l">2014.3.1</div>
+            <div class="c_list_r">成功办理了放开小额外币存款利率上限后的首笔个人小额外币存款业务</div>
+            <div class="clr"></div>
+          </div>
+          <div class="c_list">
+            <div class="c_list_p expand-all">●</div>
+            <div class="c_list_l">2014.3.19</div>
+            <div class="c_list_r">成功与上海国际能源交易中心签署战略合作协议</div>
+            <div class="clr"></div>
+          </div>
+          
+          
+        </div>
+        <div class="clr"></div>
+        <div class="p5_bottom_pic"><img src="inc/pics/page07.jpg"></div>
+      </div>
+    </div>
+  </div>
+  <!-- /content -->
+  
+  <div class="c_mouse" id="c_mouse05"><a href="page06.html"><img  class="changemouse expand-all" src="inc/pics/m1.png"></a> </div>
+  <div data-role="popup" id="popup5imgs" data-overlay-theme="b" data-theme="b" data-corners="false"> <a href="#" data-rel="back" class="exitbtn"><img src="inc/pics/exit.png"></a><img class="popphoto" src="inc/pics/p5pop.png" style="max-height:512px;" > </div>
+  
+  <script>
+
+setTimeout(function () { 
+			
+	if($(window).width()<600){	 
+	        $('.page05_content').animate({  
+			height:380 
+			 }, 6000, 'easeOutQuad',function(){
+				 
+				 $('.p5_bottom_pic').animate({opacity:1}, 6000, 'easeOutQuad');  
+				 
+				 });  
+	}else{
+		
+		 $('.page05_content').animate({  
+			height:1000 
+			 }, 6000, 'easeOutQuad',function(){
+				 
+				  $('.p5_bottom_pic').animate({opacity:1}, 6000, 'easeOutQuad'); 
+				 
+				 });  
+		
+	}
+
+	 
+	 
+},1600);	 
+
+
+   $("#c_mouse05").touchwipe({
+     wipeDown: function() { $.mobile.changePage( 'page06.html'); },
+     preventDefaultEvents: true
+});
+
+
+ </script> 
+</div>
+<!-- /page -->
+</body>
+</html>

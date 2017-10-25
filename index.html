@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自贸区银行家</title>
+<meta name="title" content="OA">
+<meta name="keywords" content="自贸区银行家">
+<meta name="description" content="自贸区银行家">
+<link rel="stylesheet" href="inc/css/jquery.mobile.theme-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.icons-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/font-awesome.min.css">
+<link rel="stylesheet" href="inc/css/resetui.css">
+<script src="inc/js/jquery.js"></script>
+<script src="inc/js/jquery.easing.min.js"></script>
+<script src="inc/js/custom.js"></script>
+<script src="inc/js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<audio preload="preload"  id="car_audio" src="music.mp3" loop></audio>
+<div id="cover"><div id="coverbox"><img id="coverimg" src="inc/pics/curtain01.png"></div></div>
+
+<div data-role="page" class="e-wap e-index" id="page01">
+
+  <div role="main" class="ui-content e-content">
+    <div class="page_bg"> <img src="inc/pics/page01.jpg" class="page01bg">
+      <div class="page_map"><img class="mapchange expand-all" src="inc/pics/map.png"></div>
+      <div class="hometxt expand-all"><img id="hometext" src="inc/pics/hometxt.png" ></div>
+    </div>
+  </div>
+  <!-- /content -->
+  
+  <div class="c_mouse" id="c_mouse01">
+  
+    <a href="page02.html" ><img  class="changemouse expand-all" src="inc/pics/m1.png"></a>
+  
+  </div>
+  
+<script>
+
+$('#coverimg').animate({  
+	top:0
+	},2000, 'easeOutQuad',function(){
+												  
+	
+		setTimeout(function () {$('#coverimg').attr('src','inc/pics/curtain02.png');}, 1260);
+		setTimeout(function () {$('#coverimg').attr('src','inc/pics/curtain03.png');}, 1660);
+		setTimeout(function () {$('#coverimg').attr('src','inc/pics/curtain04.png');}, 1990);
+		setTimeout(function () {$('#coverimg').attr('src','inc/pics/curtain05.png');}, 2130);
+		setTimeout(function () {$("#coverimg").remove();}, 2500);
+	
+		$('#page01').animate({opacity:1}, 1000, 'easeOutQuad',function(){});
+		
+												   
+												 
+}); 
+
+
+	
+		
+
+ $("#c_mouse01").touchwipe({
+     wipeDown: function() { $.mobile.changePage( 'page02.html'); },
+     preventDefaultEvents: true
+});
+
+
+document.getElementById('car_audio').play();
+document.addEventListener("WeixinJSBridgeReady", function () {
+        WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+        document.getElementById('car_audio').play();
+        });
+}, false);
+
+</script> 
+</div>
+<!-- /page -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自贸区银行家</title>
+<meta name="title" content="OA">
+<meta name="keywords" content="自贸区银行家">
+<meta name="description" content="自贸区银行家">
+<link rel="stylesheet" href="inc/css/jquery.mobile.theme-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.icons-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/font-awesome.min.css">
+<link rel="stylesheet" href="inc/css/resetui.css">
+<script src="inc/js/jquery.js"></script>
+<script src="inc/js/jquery.easing.min.js"></script>
+<script src="inc/js/custom.js"></script>
+<script src="inc/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="e-wap e-index"   id="page09">
+<div id="cover"><div id="coverbox"><a href="index.html" data-ajax="false" ><img id="coverimg09" src="inc/pics/curtain01.png"></a></div></div>
+  <div role="main" class="ui-content e-content">
+    <div class="page_bg">
+      <div class="page09_c_box">
+         <div class="page09_pic page09_pic_01"><img  class="page09_pic_01img" src="inc/pics/page0901a.jpg"></div>
+         <div class="page09_pic page09_pic_02"><img  class="page09_pic_02img" src="inc/pics/page0902a.jpg"></div>
+         <div class="page09_pic page09_pic_03"><img  class="page09_pic_03img" src="inc/pics/page0903a.jpg"></div>
+         
+        <div class="page09_txt1 textshadow1">担当社会责任</div>
+        <div class="page09_txt2 textshadow2">做最好的银行</div>
+        <div class="page09_txt3 textshadow3">中国银行上海市分行</div>
+        <div class="page09_txt4 textshadow4">想了解自贸区最新新闻动态，政策解读，产品介绍……</div>
+        <div class="page09_txt5 textshadow5">请关注“自贸区银行家”微信号</div>
+        <div class="page09_txt6 textshadow5">自贸区扩区，中国银行开启 自贸区金融服务新篇章</div>
+        <div class="page09_txt7">资讯95566</div>
+      </div>
+      <div class="bp_l"><img src="inc/pics/bank.jpg"></div>
+      <div class="bp_r"><img src="inc/pics/qr.jpg"></div>
+    </div>
+  </div>
+  <!-- /content --> 
+  
+   <div class="c_mouse" id="c_mouse09"><a href="javascript:;" onclick=" $('#coverimg09').animate({top:0},600, 'easeOutQuad',function(){});"><img  class="changemouse expand-all" src="inc/pics/m1.png"></a></div>
+  
+  <script>
+
+	$('.page09_txt1,.page09_txt2,.page09_txt3,.page09_txt4,.page09_txt5,.page09_txt6').hide();
+
+
+$('.page09_pic_01').on("click",function(){
+	
+	$('.page09_txt3,.page09_txt4,.page09_txt5,.page09_txt6').hide();
+	$('.page09_pic_01img').attr("src","inc/pics/page0901b.jpg");
+	$('.page09_pic_02img').attr("src","inc/pics/page0902a.jpg");
+	$('.page09_pic_03img').attr("src","inc/pics/page0903a.jpg");
+	
+	
+	setTimeout(function () { 	
+	
+	    $('.page09_txt1,.page09_txt2').show('slow');  
+	 
+    },300);
+	
+	
+});
+	
+$('.page09_pic_02').on("click",function(){
+	
+	$('.page09_txt1,.page09_txt2,.page09_txt5,.page09_txt6').hide();
+	$('.page09_pic_01img').attr("src","inc/pics/page0901a.jpg");
+	$('.page09_pic_02img').attr("src","inc/pics/page0902b.jpg");
+	$('.page09_pic_03img').attr("src","inc/pics/page0903a.jpg");
+	
+	
+	setTimeout(function () { 	
+	
+	    $('.page09_txt3,.page09_txt4').show('slow'); 
+	 
+    },300);
+	
+	
+});
+
+$('.page09_pic_03').on("click",function(){
+	
+	$('.page09_txt1,.page09_txt2,.page09_txt3,.page09_txt4').hide();
+	$('.page09_pic_01img').attr("src","inc/pics/page0901a.jpg");
+	$('.page09_pic_02img').attr("src","inc/pics/page0902a.jpg");
+	$('.page09_pic_03img').attr("src","inc/pics/page0903b.jpg");
+	
+	
+	setTimeout(function () { 	
+	
+	    $('.page09_txt5,.page09_txt6').show('slow'); 
+	 
+    },300);
+	
+	
+});
+
+
+ $("#c_mouse09").touchwipe({
+     wipeDown: function() { 
+	 
+	 $('#coverimg09').animate({top:0},600, 'easeOutQuad',function(){}); 
+	 
+	 
+	  },
+     preventDefaultEvents: true
+});
+
+
+ 
+ </script> 
+</div>
+<!-- /page -->
+</body>
+</html>

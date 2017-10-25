@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自贸区银行家</title>
+<meta name="title" content="OA">
+<meta name="keywords" content="自贸区银行家">
+<meta name="description" content="自贸区银行家">
+<link rel="stylesheet" href="inc/css/jquery.mobile.theme-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.icons-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/font-awesome.min.css">
+<link rel="stylesheet" href="inc/css/resetui.css">
+<script src="inc/js/jquery.js"></script>
+<script src="inc/js/jquery.easing.min.js"></script>
+<script src="inc/js/custom.js"></script>
+<script src="inc/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="e-wap e-index"  id="page07">
+<div role="main" class="ui-content e-content">
+  <div class="page_bg">
+    <div class="page07_c_box">
+      <div class="page07_content">
+        <div class="page07_top">
+          <div class="page07_l"><img src="inc/pics/a.png" class="change7light expand-all"></div>
+          <div class="page07_r" id="animated_div">2014.9.18<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;李克强总理一行前往中国银行自贸区分行进行视察<br>
+            对中行自贸区业务取得的成绩表示充分肯定，并指出：<br>
+            中国银行既为客户提供了优质的金融服务，又使实体经济能够顺利发展，让其充分享受到自贸区改革的政策“红利” 。<br>
+          </div>
+        </div>
+        <div class="page07_pic"><img src="inc/pics/page05.png"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /content -->
+
+<div class="c_mouse" id="c_mouse07"><a href="page08.html"><img  class="changemouse expand-all" src="inc/pics/m1.png"></a> </div>
+  <script>
+  
+$("#c_mouse07").touchwipe({
+     wipeDown: function() { $.mobile.changePage( 'page08.html'); },
+     preventDefaultEvents: true
+});
+
+
+	setTimeout(function () { 
+	
+ $('.page07_pic').animate({opacity:1}, 6000, 'easeOutQuad');
+     
+		   
+	   
+	   
+    }, 1200);
+ 
+ </script> 
+</div>
+<!-- /page -->
+</body>
+</html>

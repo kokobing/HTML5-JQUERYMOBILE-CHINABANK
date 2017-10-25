@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自贸区银行家</title>
+<meta name="title" content="OA">
+<meta name="keywords" content="自贸区银行家">
+<meta name="description" content="自贸区银行家">
+<link rel="stylesheet" href="inc/css/jquery.mobile.theme-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.icons-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/font-awesome.min.css">
+<link rel="stylesheet" href="inc/css/resetui.css">
+<script src="inc/js/jquery.js"></script>
+<script src="inc/js/jquery.easing.min.js"></script>
+<script src="inc/js/custom.js"></script>
+<script src="inc/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="e-wap e-index"  id="page02">
+  <div role="main" class="ui-content e-content">
+    <div class="page_bg">
+      <div class="page02_top">
+        <div class="p2_top_1"><img src="inc/pics/p02.png"></div>
+        <div class="p2_top_2"><img src="inc/pics/p02.png"></div>
+        <div class="p2_top_3"><img src="inc/pics/p02.png"></div>
+        <div class="p2_top_4"><img src="inc/pics/p02.png"></div>
+        <div class="p2_top_5"><img src="inc/pics/p02.png"></div>
+        <div class="soundimg1"><img src="inc/pics/s01.png"></div>
+        <div class="soundimg2"><img src="inc/pics/s01.png" width="15"></div>
+        <div class="soundimg3"><img src="inc/pics/s01.png"  width="10"></div>
+      </div>
+      <div class="page02_con_1">
+        <div class="page02_c1_l">
+          <div class="page2btn"> <a href="#popupimgs" data-rel="popup" data-position-to="window" data-transition="fade"><img class="change2btn expand-all" src="inc/pics/btn1.png"></a> </div>
+          2013.9.29 </div>
+        <div class="page02_c1_r">中国(上海）自由贸易试验区</div>
+        <div class="clr"></div>
+      </div>
+      <div class="page02_con_2 ">
+        <div class="page02_c2_c">原自贸区由4个海关特殊监管区域组成<br>
+          面积28.78平方公里</div>
+      </div>
+      <div class="page02_con_3">
+        <div class="page02_c3_title">2015.4.20</div>
+        <div class="page02_c3_content">上海自贸区进一步改革开放方案正式公布实施范围120.72平方公里，扩展至陆家嘴金融片区、金桥开发区、张江高科技开发片区。</div>
+      </div>
+    </div>
+  </div>
+  <!-- /content -->
+  
+  <div class="c_mouse"  id="c_mouse02"><a href="page03.html" ><img  class="changemouse expand-all" src="inc/pics/m1.png"></a></div>
+  <div data-role="popup" id="popupimgs" data-overlay-theme="b" data-theme="b" data-corners="false"> <a href="#" data-rel="back" class="exitbtn"><img src="inc/pics/exit.png"></a><img class="popphoto" src="inc/pics/page2btnimg.png" style="max-height:512px;" > </div>
+  <script>
+
+setTimeout(function () { 
+	
+      $('.p2_top_1').animate({  
+		left:25,  
+		opacity: 1  
+      }, 1000, 'easeOutQuad',function(){
+		  
+		  
+		     $('.p2_top_2').animate({  
+				left:45,  
+				opacity: 1  
+			  }, 1000, 'easeOutQuad',function(){
+				  
+				  
+				  		     $('.p2_top_3').animate({  
+								left:70,  
+								opacity: 1  
+							  }, 1000, 'easeOutQuad',function(){
+								  
+								  
+								     $('.p2_top_4').animate({  
+										left:100,  
+										opacity: 1  
+									  }, 1000, 'easeOutQuad',function(){
+										  
+										  
+										    $('.p2_top_5').animate({  
+												left:130,  
+												opacity: 1  
+											  }, 1000, 'easeOutQuad',function(){
+												  
+												   
+												    var timer1 = setInterval(function(){
+														 
+														   
+															soundimgshow();
+														 
+														 
+														 }, 800);  
+														 
+														 
+													setTimeout(function () { 
+$('.page02_con_1').animate({opacity: 1}, 1500, 'easeOutQuad',function(){
+														  
+	 $('.page02_con_2').animate({ opacity: 1}, 1500, 'easeOutQuad',function(){
+														  
+		$('.page02_con_3').animate({ opacity: 1}, 1500, 'easeOutQuad',function(){}); 
+														  
+	 }); 
+														  
+}); 
+}, 1600);
+													  
+													 
+												  
+												  });  
+										  
+										  
+										  
+										  });  
+								  
+								  
+								  
+								  });  
+				  
+				  
+				  
+				  });  
+		  
+		  
+		  });  
+
+   
+	   
+}, 600);
+
+
+
+
+
+	
+
+function soundimgshow(){
+	
+	
+	setTimeout(function () { 
+	    $('.soundimg1').addClass('showimg');
+	  }, 500);
+	  
+	 	setTimeout(function () { 
+	    $('.soundimg2').addClass('showimg');
+	  }, 300);
+	  
+	  
+	  	setTimeout(function () { 
+	    $('.soundimg3').addClass('showimg');
+	  }, 200); 
+	  
+	   $('.soundimg1,.soundimg2,.soundimg3').removeClass('showimg');
+	 
+	
+	
+}
+
+
+ $("#c_mouse02").touchwipe({
+     wipeDown: function() { $.mobile.changePage( 'page03.html'); },
+     preventDefaultEvents: true
+});
+
+</script> 
+</div>
+<!-- /page -->
+</body>
+</html>

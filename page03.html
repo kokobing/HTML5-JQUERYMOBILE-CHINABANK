@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自贸区银行家</title>
+<meta name="title" content="OA">
+<meta name="keywords" content="自贸区银行家">
+<meta name="description" content="自贸区银行家">
+<link rel="stylesheet" href="inc/css/jquery.mobile.theme-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.icons-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="inc/css/font-awesome.min.css">
+<link rel="stylesheet" href="inc/css/resetui.css">
+<script src="inc/js/jquery.js"></script>
+<script src="inc/js/jquery.easing.min.js"></script>
+<script src="inc/js/custom.js"></script>
+<script src="inc/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="e-wap e-page03"  id="page03">
+  <div role="main" class="ui-content e-content">
+    <div class="page_bg">
+    <div id="page3title">
+      <div class="page03_title">自贸区大事记</div>
+      <div class="page03_txt">2013.12.2</div>
+      <div class="page03_txt">出台《中国人民银行关于金融支持中国（上海）自由贸易试验区建设的意见》</div>
+    </div>  
+      <div class="page03_xyh"> <i class="fa fa-chevron-left arrow1"></i> <i class="fa fa-chevron-left arrow2"></i> <i class="fa fa-chevron-left arrow3"></i> </div>
+      <div class="page03_images">
+        <div id="page03_01" class="page03_01"> <img src="inc/pics/p03_1.png"  style="width:100%;"> <span>创新有利于风险<br>
+          管理的账户体系</span> </div>
+      </div>
+      <div class="page03_images">
+        <div id="page03_02" class="page03_02"> <img src="inc/pics/p03_2.png"  style="width:100%;"> <span>探索投融资<br>
+          汇兑便利</span> </div>
+      </div>
+      <div class="page03_images">
+        <div id="page03_03" class="page03_03"> <img src="inc/pics/p03_3.png"  style="width:100%;"> <span>扩大人民币<br>
+          跨境使用</span> </div>
+      </div>
+      <div class="page03_images">
+        <div id="page03_04" class="page03_04"> <img src="inc/pics/p03_4.png"  style="width:100%;"> <span>稳步推进<br>
+          利率市场化</span> </div>
+      </div>
+      <div class="page03_images">
+        <div id="page03_05" class="page03_05"> <img src="inc/pics/p03_5.png"  style="width:100%;"> <span>深化外汇<br>
+          管理改革 </span> </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- /content -->
+  
+  <div class="c_mouse" id="c_mouse03"><a href="page04.html"><img  class="changemouse expand-all" src="inc/pics/m1.png"></a></div>
+  <script>
+
+
+
+	
+	setTimeout(function () { 
+	
+    $('#page3title').animate({  
+		opacity: 1  
+	},2000, 'easeOutQuad',function(){});  
+	
+	
+	
+  $('.page03_01,.page03_03,.page03_05').animate({  
+    left:0,  
+    opacity: 1  
+     }, 2000, 'easeOutQuad',function(){});  
+
+
+	 $('.page03_02,.page03_04').animate({  
+		right:0,  
+		opacity: 1  
+	},2000, 'easeOutQuad',function(){});  
+	   
+	   
+	   
+    }, 1500);
+	
+	
+	
+	setInterval(function(){
+														 
+		setTimeout(function () {$('.arrow1').css('display','inline-block');}, 500);
+		setTimeout(function () {$('.arrow2').css('display','inline-block');}, 700);
+		setTimeout(function () {$('.arrow3').css('display','inline-block');}, 900);
+		
+		$('.arrow1,.arrow2,.arrow3').css('display','none'); 
+														 
+	}, 1000);  
+
+
+
+ $("#c_mouse03").touchwipe({
+     wipeDown: function() { $.mobile.changePage( 'page04.html'); },
+     preventDefaultEvents: true
+});
+
+
+</script> 
+</div>
+<!-- /page -->
+</body>
+</html>
